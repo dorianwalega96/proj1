@@ -1,12 +1,8 @@
 package lab5app;
 
-import java.awt.Color;
-
 import javax.swing.JEditorPane;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.text.Document;
 import javax.swing.text.StyledDocument;
 import javax.swing.text.html.HTMLEditorKit;
 import javax.swing.text.html.StyleSheet;
@@ -15,9 +11,13 @@ import lab5lib.Decorator;
 
 public class GUI extends JFrame{
 	
-	JEditorPane panel;
-	HTMLEditorKit html;
-	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JEditorPane panel;
+	private HTMLEditorKit html;
+		
 	public GUI(){
 		super("SUPERHTML");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -56,5 +56,5 @@ public class GUI extends JFrame{
 		repaint();
 		validate();
 	}
-	
+
 }
